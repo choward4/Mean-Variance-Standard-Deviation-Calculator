@@ -30,12 +30,12 @@ def calculate(list):
 
     # add values to dict for axis1 and axis2 
     for x in range(2):
-       mean.append(Matrix.mean(axis=x).tolist())
-       variance.append(Matrix.var(axis=x).tolist())
-       stdDev.append(Matrix.std(axis=x).tolist())
-       max.append(Matrix.max(axis=x).tolist())
-       min.append(Matrix.min(axis=x).tolist())
-       sum.append(Matrix.sum(axis=x).tolist())
+       mean.append(Matrix.mean(axis=x))
+       variance.append(Matrix.var(axis=x))
+       stdDev.append(Matrix.std(axis=x))
+       max.append(Matrix.max(axis=x))
+       min.append(Matrix.min(axis=x))
+       sum.append(Matrix.sum(axis=x))
     
     # add values to dict for flattened arr
     mean.append(float(flattenedArr.mean()))
