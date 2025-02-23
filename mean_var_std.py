@@ -2,6 +2,7 @@ import numpy as np
 
 def calculate(list):
 
+    # lists to be added to dictionary
     mean = []
     variance = []
     stdDev = []
@@ -37,7 +38,7 @@ def calculate(list):
        min.append(Matrix.min(axis=x))
        sum.append(Matrix.sum(axis=x))
     
-    # add values to dict for flattened arr
+    # add values to dict for flattened array
     mean.append(float(flattenedArr.mean()))
     variance.append(float(flattenedArr.var()))
     stdDev.append(float(flattenedArr.std()))
@@ -52,7 +53,5 @@ def calculate(list):
     analysis['max'] = max
     analysis['min'] = min
     analysis['sum'] = sum
-
-    #print(analysis)
 
     return analysis
