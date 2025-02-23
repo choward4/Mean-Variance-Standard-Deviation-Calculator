@@ -17,4 +17,6 @@ The returned dictionary should follow this format:
   'sum': [axis1, axis2, flattened]
 }
 
+axis1 refers to columns, axis2 refers to rows, and flattened refers to the entire collection in 1 dimension
+
 If a list containing less than 9 elements is passed into the function, it should raise a ValueError exception with the message: "List must contain nine numbers." The values in the returned dictionary should be lists and not Numpy arrays.
